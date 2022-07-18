@@ -7,15 +7,35 @@
   </head>
   
   <body>
-    <nav>
+    <nav style="position: fixed; width: 100%; z-index: 999;">
         <a href="index" style="position: relative; left: 2.5%;">Home</a>
         <a href="Library" style="position: relative; left: 10%;">Library</a>
     </nav>
 
-    <h3 style="position: absolute; top: 20%; left: 33.5%; font-size: 50px;">Create main window</h3>
+    <h3 style="position: absolute; top: 20%; width: 100%; font-size: 50px; text-align: center;">Create main window</h3>
     <div style="position: absolute; left: 12.5%; top: 30%;">
         <h3 style="top: 6.5%;"><span style="color:olivedrab">local </span>library = <span style="color:brown">loadstring</span>(game:HttpGet(<span style="color:darkcyan">'https://raw.githubusercontent.com/Lagendking/library-test/main/library.lua'</span>))()</h3>
         <h3 style="top: 10.5%;"><span style="color:olivedrab">local </span>window = library:Init(<span style="color:darkcyan">""</span>, <span style="color:darkcyan">false</span>)</h3>
+    </div>
+
+    <h3 style="position: absolute; top: 75%; width: 100%; font-size: 50px; text-align: center;">Create new tab</h3>
+    <div style="position: absolute; left: 12.5%; top: 85%;">
+        <h3 style="top: 6.5%;"><span style="color:olivedrab">local </span>library = <span style="color:brown">loadstring</span>(game:HttpGet(<span style="color:darkcyan">'https://raw.githubusercontent.com/Lagendking/library-test/main/library.lua'</span>))()</h3>
+        <h3 style="top: 10.5%;"><span style="color:olivedrab">local </span>window = library:Init(<span style="color:darkcyan">""</span>, <span style="color:darkcyan">false</span>)</h3>
+        <h3 style="top: 14.5%;"></h3>
+        <h3 style="top: 18.5%;">win:newTab(<span style="color:darkcyan">"name"</span>)</h3>
+    </div>
+
+    <h3 style="position: absolute; top: 130%; width: 100%; font-size: 50px; text-align: center;">Create new button</h3>
+    <div style="position: absolute; left: 12.5%; top: 140%;">
+        <h3 style="top: 6.5%;"><span style="color:olivedrab">local </span>library = <span style="color:brown">loadstring</span>(game:HttpGet(<span style="color:darkcyan">'https://raw.githubusercontent.com/Lagendking/library-test/main/library.lua'</span>))()</h3>
+        <h3 style="top: 10.5%;"><span style="color:olivedrab">local </span>window = library:Init(<span style="color:darkcyan">""</span>, <span style="color:darkcyan">false</span>)</h3>
+        <h3 style="top: 14.5%;"></h3>
+        <h3 style="top: 18.5%;">win:newTab(<span style="color:darkcyan">"name"</span>)</h3>
+        <h3 style="top: 22.5%;"></h3>
+        <h3 style="top: 26.5%;">win:newButton(<span style="color:darkcyan">"name"</span>, <span style="color:darkcyan">"tab name"</span>, <span style="color:olivedrab">function</span>()</h3>
+        <h3 style="top: 30.5%;"><span style="color:gray">&emsp; -- Do something here</span></h3>
+        <h3 style="top: 34.5%;"><span style="color:olivedrab">end</span>)</h3>
     </div>
   </body>
   
@@ -23,6 +43,14 @@
     * {margin: 0; padding: 0;}
     body {
         background-color: rgb(68, 68, 68);
+        overflow-x: hidden;
+    }
+
+    html, body {
+        width: 100%;
+        height: 150%;
+        margin: 0;
+        padding: 0;
     }
 
     nav {
