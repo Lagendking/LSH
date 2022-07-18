@@ -4,7 +4,6 @@ let db = false
 function checkPass(){
     var Key = document.getElementById("EnterKey");
     if(KEYS.includes(Key.value) && db == false) {
-        alert("Correct Key!")
         db = true
         window.location.replace("LibraryInfo");
     }
